@@ -1,0 +1,14 @@
+{
+  "name": "iot-harvest-timer",
+  "version": "0.0.1",
+  "description": "Physical Harvest Timer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"working on it...\""
+  },
+  "author": "Sparkbox",
+  "license": "ISC",
+  "dependencies": {
+    "harvest": "^0.1.5"
+  }
+}
