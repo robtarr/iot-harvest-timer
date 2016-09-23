@@ -1,0 +1,10 @@
+{
+  "harvest": {
+    "subdomain": "sparkbox",
+    "email": "...@heysparkbox.com",
+    "password": "...",
+    "identifier": "...",
+    "secret": "...",
+    "user_agent": "Sparkbox IOT Timer"
+  }
+}

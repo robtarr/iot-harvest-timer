@@ -1,14 +1,21 @@
 {
   "name": "iot-harvest-timer",
   "version": "0.0.1",
-  "description": "Physical Harvest Timer",
-  "main": "index.js",
+  "description": "Tracking Harvest Timer with a physical device",
+  "main": "src/index.js",
+  "repository": "https://github.com/sparkbox/iot-harvest-timer",
   "scripts": {
-    "test": "echo \"working on it...\""
+    "start": "babel-node src/index.js",
+    "test": "echo \"working on it...\"",
+    "list": "babel-node src/list.js"
   },
-  "author": "Sparkbox",
+  "author": "Rob Tarr",
   "license": "ISC",
   "dependencies": {
-    "harvest": "^0.1.5"
+    "bluebird": "^3.4.1",
+    "harvest": "^0.1.5",
+    "johnny-five": "^0.10.0",
+    "lodash": "^4.15.0",
+    "particle-io": "^0.12.0"
   }
 }

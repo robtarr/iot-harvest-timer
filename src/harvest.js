@@ -1,16 +1,21 @@
 'use strict';
 
-const Harvest = require('harvest');
+import Harvest from 'harvest';
+import config from '../config/default.json';
+
 const harvest = new Harvest({
         subdomain: config.harvest.subdomain,
         email: config.harvest.email,
         password: config.harvest.password
       });
 const TimeTracking = harvest.TimeTracking;
-const timers = require('./config/timers.json');
 
-TimeTracking.daily({}, function(err, tasks) {
-    if (err) throw new Error(err);
+function isRunning(timer) {
+  return !!timer.timer_started_at;
+}
 
-// work with tasks
-});
+export default harvest;
+export {
+  TimeTracking,
+  isRunning
+}
