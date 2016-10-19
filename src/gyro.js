@@ -31,7 +31,7 @@ function orientation(data) {
     }
   }
 
-  return currentOrientation;
+  return undefined;
 }
 
 export {

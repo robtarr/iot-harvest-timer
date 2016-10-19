@@ -11,7 +11,7 @@ const harvest = new Harvest({
 const TimeTracking = harvest.TimeTracking;
 
 function isRunning(timer) {
-  return !!timer.timer_started_at;
+  return timer && !!timer.timer_started_at;
 }
 
 export default harvest;
