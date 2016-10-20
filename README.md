@@ -3,8 +3,12 @@
 This is currently in a prototype phase.
 
 ## TODO
- - solder board together
- - build permanent (non-LEGO) enclosure
- - Electron status bar app
-   - updates
-   - setup
+
+### Hardware
+ - Solder board together
+ - Build permanent (non-LEGO) enclosure
+ - Add charging circuit
+
+### Electron App
+ - Add code to update projects per side
+ - Find a way to reconnect if connection to Photon is lost
