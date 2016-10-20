@@ -19,6 +19,7 @@ const WAITFORCUBETOROTATE = 200;
 let currentTimer;
 let currentOrientation;
 let timeout;
+let menuBar;
 
 
 /** Look for `startTask` in the currently running timers for today
@@ -108,6 +109,7 @@ function newTimer(task) {
       formattedDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 
   setStatus(`message`, `Starting new timer for ${task.name}`);
+
   TimeTracking.create({
     project_id: task.projectId,
     task_id: task.taskId,
@@ -135,7 +137,8 @@ function trigger(position) {
   const startTask = timers[position];
 
   setStatus({ message: `Triggering side ${position}`});
-  if (!!startTask) {
+
+  if (startTask) {
     getTask(startTask).then((task) => {
       if (task) {
         startTimer(task);
@@ -149,10 +152,13 @@ function trigger(position) {
   }
 }
 
-function go() {
+function go(mb) {
+  menuBar = mb;
+
   setStatus({ message: 'Looking for Harvest Cube...' });
 
   board.on('ready', function() {
+
     var accelerometer = new five.Accelerometer({
       controller: 'MPU6050',
       sensitivity: 100
