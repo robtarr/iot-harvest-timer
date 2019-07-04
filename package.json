@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node start.js",
     "test": "echo \"working on it...\"",
-    "list": "babel-node src/list.js"
+    "list": "babel-node src/list.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Rob Tarr",
   "license": "ISC",
@@ -28,11 +30,13 @@
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
     "shelljs": "^0.7.4",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-preset-react": "^6.11.1",
     "concurrently": "^3.0.0",
     "webpack-node-externals": "^1.4.3"
-  }
+  },
+  "snyk": true
 }
