@@ -28,7 +28,7 @@
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
     "shelljs": "^0.7.4",
-    "webpack": "^1.13.2"
+    "webpack": "^3.0.0"
   },
   "devDependencies": {
     "babel-preset-react": "^6.11.1",
