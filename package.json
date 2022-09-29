@@ -17,7 +17,7 @@
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "bluebird": "^3.4.1",
-    "electron": "^1.4.1",
+    "electron": "^18.3.14",
     "harvest": "^0.1.5",
     "johnny-five": "^0.10.0",
     "json-loader": "^0.5.4",
