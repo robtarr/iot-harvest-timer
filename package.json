@@ -19,7 +19,7 @@
     "bluebird": "^3.4.1",
     "electron": "^1.4.1",
     "harvest": "^0.1.5",
-    "johnny-five": "^0.10.0",
+    "johnny-five": "^0.12.0",
     "json-loader": "^0.5.4",
     "lodash": "^4.15.0",
     "menubar": "^5.1.0",
